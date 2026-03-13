@@ -12,6 +12,8 @@ A full-stack expense splitting application built with React, Node.js, Express, a
 - **User Search**: Find and add friends to split expenses with
 - **Multiple Currencies**: Support for different currencies
 - **Expense Categories**: Categorize expenses for better organization
+- **Modern UI/UX**: Glass morphism design with animations and micro-interactions
+- **Responsive Design**: Works seamlessly on all devices
 
 ## Tech Stack
 
@@ -21,6 +23,8 @@ A full-stack expense splitting application built with React, Node.js, Express, a
 - React Router for navigation
 - Axios for API calls
 - Socket.io-client for real-time updates
+- Framer Motion for animations
+- Modern glass morphism design
 
 ### Backend
 - Node.js with Express.js
@@ -161,6 +165,12 @@ splitwise/
 │   ├── public/
 │   ├── src/
 │   │   ├── components/     # React components
+│   │   │   ├── Auth/      # Authentication components
+│   │   │   ├── Dashboard/  # Dashboard components
+│   │   │   ├── Groups/     # Group management components
+│   │   │   ├── Expenses/   # Expense components
+│   │   │   ├── Layout/     # Layout components
+│   │   │   └── UI/        # Custom UI components
 │   │   ├── contexts/       # React contexts (Auth, Socket)
 │   │   └── App.js
 │   └── package.json
@@ -172,6 +182,21 @@ splitwise/
 ├── package.json           # Root package.json
 └── README.md
 ```
+
+## UI/UX Features
+
+### Modern Design System
+- **Glass Morphism**: Translucent cards with backdrop blur effects
+- **Gradient Theme**: Purple-to-pink color gradients throughout
+- **Custom Components**: GlassCard, GradientButton, AnimatedAvatar
+- **Micro-interactions**: Hover states, smooth transitions, animations
+
+### Enhanced User Experience
+- **Animated Authentication**: Login/register with beautiful gradients and animations
+- **Interactive Dashboard**: Statistics cards, animated group cards
+- **Modern Navigation**: Glass navbar with animated elements
+- **Responsive Design**: Optimized for all screen sizes
+- **Loading States**: Animated spinners and skeleton screens
 
 ## Contributing
 
