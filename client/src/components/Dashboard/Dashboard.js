@@ -7,16 +7,13 @@ import {
   Button,
   Box,
   CircularProgress,
-  Fab,
   Dialog,
   DialogTitle,
   DialogContent,
   DialogActions,
   TextField,
   Autocomplete,
-  Avatar,
   Chip,
-  LinearProgress,
   IconButton,
   Tooltip
 } from '@mui/material';
@@ -24,7 +21,6 @@ import {
   Add,
   Group,
   PeopleAlt,
-  TrendingUp,
   Receipt,
   Search,
   MoreVert
@@ -41,7 +37,6 @@ const Dashboard = () => {
   const [loading, setLoading] = useState(true);
   const [createDialogOpen, setCreateDialogOpen] = useState(false);
   const [newGroup, setNewGroup] = useState({ name: '', description: '', members: [] });
-  const [availableUsers, setAvailableUsers] = useState([]);
   const [stats, setStats] = useState({ totalGroups: 0, totalFriends: 0, totalExpenses: 0 });
   const navigate = useNavigate();
 
@@ -528,7 +523,7 @@ const Dashboard = () => {
           />
           <Autocomplete
             multiple
-            options={availableUsers}
+            options={[]}
             getOptionLabel={(option) => `${option.name} (${option.email})`}
             filterOptions={(options, state) => {
               return handleSearchUsers(state.inputValue).then(results => results);

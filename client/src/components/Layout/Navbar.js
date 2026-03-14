@@ -9,8 +9,6 @@ import {
   IconButton,
   Menu,
   MenuItem,
-  Avatar,
-  Chip,
   Badge
 } from '@mui/material';
 import {
